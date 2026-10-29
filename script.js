@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'Scenic Hill Station & Ancient Fort',
       distance: '18 km from Tumakuru City (Altitude: 3,940 ft)',
       timings: 'Sunrise to Sunset',
+      image: 'images/Devarayana%20durga.png',
+      imageAlt: 'Devarayanadurga Hill and Temple in Tumakuru',
       description: `
         Devarayanadurga is an idyllic hill station perched amidst rocky granitic peaks and dense dry deciduous reserve forests. Named after Mysore Maharaja Chikka Devaraja Wodeyar, the hill fort was historically celebrated for its seven-tiered impregnable defenses.
         At the foothill lies the Sri Bhoga Narasimha Temple, while the hilltop is crowned by the magnificent Sri Yoga Narasimha Temple offering breath-taking panoramic vistas of the surrounding plains.
