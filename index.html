@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tumakuru City Official Portal - Kalpataru Nadu of Karnataka. Explore heritage landmarks, Siddaganga Mutt, Devarayanadurga, Smart City initiatives, tourism, and citizen services.">
+  <meta name="keywords" content="Tumkur, Tumakuru, Karnataka, Siddaganga Mutt, Devarayanadurga, Namada Chilume, Smart City, Pavagada Solar Park, Thatte Idli">
+  <title>Tumakuru (Tumkur) | The Kalpataru City of Karnataka</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Official announcement">
+    <div class="container announcement-content">
+      <span class="badge">Karnataka Smart City Hub</span>
+      <p>Welcome to Tumakuru (Tumkur) — The Knowledge &amp; Green Energy Capital</p>
+      <div class="announcement-links">
+        <a href="#helpline" class="quick-link">Emergency: 112</a>
+        <span aria-hidden="true">•</span>
+        <a href="#services" class="quick-link">Citizen Portal</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-identity" aria-label="Tumakuru City Home">
+        <div class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" class="emblem-svg" fill="none" stroke="currentColor">
+            <circle cx="24" cy="24" r="22" stroke="var(--color-primary-600)" stroke-width="2.5" fill="var(--color-primary-50)" />
+            <!-- Coconut Palm Motif & Sun -->
+            <circle cx="34" cy="14" r="4" fill="var(--color-accent-amber)" />
+            <path d="M24 38V22C24 16 19 12 14 14" stroke="var(--color-primary-700)" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M24 22C24 16 29 12 34 14" stroke="var(--color-primary-700)" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M24 26C20 22 15 22 11 25" stroke="var(--color-primary-700)" stroke-width="2" stroke-linecap="round" />
+            <path d="M24 26C28 22 33 22 37 25" stroke="var(--color-primary-700)" stroke-width="2" stroke-linecap="round" />
+            <!-- Fort / Temple Kalasa base -->
+            <path d="M16 38H32L30 42H18L16 38Z" fill="var(--color-primary-700)" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="kannada-title">ತುಮಕೂರು</span>
+          <span class="english-title">TUMAKURU</span>
+          <span class="brand-subtitle">Smart City • Kalpataru Nadu</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#landmarks" class="nav-link">Landmarks &amp; Tourism</a></li>
+          <li><a href="#smart-city" class="nav-link">Smart City</a></li>
+          <li><a href="#culture" class="nav-link">Culture &amp; Cuisine</a></li>
+          <li><a href="#services" class="nav-link">Citizen Services</a></li>
+          <li><a href="#transport" class="nav-link">How to Reach</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle dark and light color scheme" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#landmarks" class="btn btn-primary nav-cta">Explore City</a>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button class="mobile-menu-btn" id="drawer-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <aside class="mobile-nav-drawer" id="mobile-nav-panel" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+    <div class="mobile-nav-content" tabindex="-1">
+      <div class="mobile-nav-header">
+        <div class="brand-text">
+          <span class="kannada-title">ತುಮಕೂರು</span>
+          <span class="english-title">TUMAKURU CITY</span>
+        </div>
+        <button class="btn btn-icon close-btn" id="drawer-close" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="#overview" class="mobile-link">Overview</a></li>
+          <li><a href="#landmarks" class="mobile-link">Landmarks &amp; Tourism</a></li>
+          <li><a href="#smart-city" class="mobile-link">Smart City Projects</a></li>
+          <li><a href="#culture" class="mobile-link">Culture &amp; Cuisine</a></li>
+          <li><a href="#services" class="mobile-link">Citizen Services</a></li>
+          <li><a href="#transport" class="mobile-link">How to Reach</a></li>
+          <li><a href="#helpline" class="mobile-link">Helpline Directory</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <div class="emergency-tag">
+          <strong>Emergency Contacts:</strong>
+          <span>Police: 112 • Fire: 101 • Health: 108</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-pattern"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <span class="hero-badge">ಕಲ್ಪತರು ನಾಡು • Land of Coconut Palms</span>
+            <span class="hero-subbadge">70 km from Bengaluru • NH 48</span>
+          </div>
+
+          <h1 class="hero-title">
+            Discover <span class="gradient-text">Tumakuru</span>, Where Sacred Heritage Meets Smart Future
+          </h1>
+
+          <p class="hero-lead">
+            Revered for centuries as Karnataka's spiritual sanctuary and educational epicenter, Tumakuru has evolved into a powerhouse of renewable energy, high-tech manufacturing, and lush hill sanctuaries.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#landmarks" class="btn btn-primary btn-lg">Explore Top Attractions</a>
+            <a href="#smart-city" class="btn btn-outline btn-lg">Smart City Vision</a>
+          </div>
+
+          <!-- Quick Stats Highlights -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Heritage &amp; Pilgrim Sites</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2,050 MW</span>
+              <span class="stat-label">Pavagada Solar Park</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">35+</span>
+              <span class="stat-label">Premier Universities &amp; Colleges</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">Top 10</span>
+              <span class="stat-label">Industrial Corridor Node</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITY OVERVIEW / ABOUT -->
+    <section class="section overview-section" id="overview">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">City Profile</span>
+          <h2 class="section-title">The Gateway to Central Karnataka</h2>
+          <p class="section-subtitle">
+            Flanked by misty granitic hills, verdant coconut groves, and major expressways, Tumakuru serves as the quintessential link between historic Karnataka and modern technological progress.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3>Kalpataru Nadu</h3>
+            <p>
+              Famed for its sprawling coconut, arecanut, and silk farms, Tumakuru supplies premium coconuts and copra across the nation, earning the moniker of the 'Kalpataru' (wish-fulfilling palm) land.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <h3>Knowledge Capital</h3>
+            <p>
+              Home to the renowned Siddaganga Institute of Technology, Tumkur University, medical institutions, and schools that educate hundreds of thousands of scholars from every corner of India.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+              </svg>
+            </div>
+            <h3>Clean Green Energy</h3>
+            <p>
+              Anchored by the colossal Shakti Sthala in Pavagada taluk, generating 2,050 MW of solar power, making Tumakuru an international benchmark for renewable energy production.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h3>Industrial Hub (CBIC)</h3>
+            <p>
+              As part of the Chennai-Bengaluru-Mumbai Industrial Corridor, the Vasanthanarasapura Industrial Area and Mega Food Park host premier automobile, FMCG, and aerospace ventures.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANDMARKS & TOURISM (Interactive Category Filtering) -->
+    <section class="section landmarks-section" id="landmarks">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Tourism &amp; Heritage</span>
+          <h2 class="section-title">Wonders of Tumakuru</h2>
+          <p class="section-subtitle">
+            From centuries-old rock-cut shrines and serene hill stations to futuristic glass houses and lakes. Select a category to filter.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-toolbar" role="toolbar" aria-label="Filter attractions">
+          <button class="filter-btn active" data-filter="all">All Places</button>
+          <button class="filter-btn" data-filter="pilgrimage">Pilgrimage &amp; Sacred</button>
+          <button class="filter-btn" data-filter="nature">Hills &amp; Nature</button>
+          <button class="filter-btn" data-filter="heritage">History &amp; Art</button>
+          <button class="filter-btn" data-filter="modern">Smart &amp; Modern</button>
+        </div>
+
+        <!-- Landmark Cards Grid -->
+        <div class="landmarks-grid" id="landmarks-container">
+          
+          <!-- Item 1: Siddaganga Mutt -->
+          <article class="landmark-card" data-category="pilgrimage">
+            <figure class="card-media">
+              <img src="images/Sri%20Siddaganga%20Mutt.png" alt="Sri Siddaganga Mutt Temple and Matha Complex in Kyatsandra, Tumakuru" class="card-image" loading="lazy" width="1024" height="768">
+              <span class="location-badge">Kyatsandra, Tumakuru</span>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Pilgrimage</span>
+                <span class="distance-tag">5 km from Center</span>
+              </div>
+              <h3 class="card-title">Sri Siddaganga Mutt</h3>
+              <p class="card-desc">
+                World-renowned pilgrimage center founded in the 15th century. Revered for Dr. Sri Sri Shivakumara Swamiji's 'Trividha Dasohi' tradition providing free education, boarding, and meals to over 10,000 students daily.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="siddaganga">View Details</button>
+                <span class="timing-badge">Daily: 5:30 AM - 9:00 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Devarayanadurga -->
+          <article class="landmark-card" data-category="nature">
+            <figure class="card-media">
+              <div class="media-illustration hills-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M10 70 Q35 20 60 70" fill="#047857" opacity="0.85" />
+                  <path d="M40 70 Q70 15 95 70" fill="#065f46" opacity="0.95" />
+                  <path d="M52 28 L57 38 L47 38 Z" fill="#fbbf24" />
+                  <circle cx="20" cy="25" r="8" fill="#fde68a" opacity="0.8" />
+                </svg>
+                <span class="location-badge">DD Hills, 3,940 ft</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Hills &amp; Nature</span>
+                <span class="distance-tag">18 km from City</span>
+              </div>
+              <h3 class="card-title">Devarayanadurga (DD Hills)</h3>
+              <p class="card-desc">
+                Enchanting hill fortress surrounded by deep green reserves. Features the hilltop Yoga Narasimha and foothill Bhoga Narasimha temples, panoramic viewpoints, and invigorating trek paths.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="dd-hills">View Details</button>
+                <span class="timing-badge">Sunrise to Sunset</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Namada Chilume -->
+          <article class="landmark-card" data-category="nature">
+            <figure class="card-media">
+              <div class="media-illustration forest-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M15 70 Q25 40 35 70" fill="#059669" />
+                  <path d="M65 70 Q75 35 85 70" fill="#047857" />
+                  <rect x="40" y="55" width="20" height="15" rx="4" fill="#0284c7" />
+                  <path d="M48 40 Q50 48 50 55" stroke="#38bdf8" stroke-width="2" fill="none" stroke-dasharray="2,2" />
+                  <circle cx="50" cy="38" r="2" fill="#38bdf8" />
+                </svg>
+                <span class="location-badge">Devarayanadurga Forest</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Nature &amp; Myth</span>
+                <span class="distance-tag">14 km from City</span>
+              </div>
+              <h3 class="card-title">Namada Chilume</h3>
+              <p class="card-desc">
+                Perennial rock spring believed to have been punctured by Lord Rama's arrow to draw water for his tilak. Nestled inside a serene forest reserve with a deer park and herbal arboretum.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="namada-chilume">View Details</button>
+                <span class="timing-badge">Daily: 8:00 AM - 5:30 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Kaidala Chennakeshava -->
+          <article class="landmark-card" data-category="heritage">
+            <figure class="card-media">
+              <div class="media-illustration heritage-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M30 65 L70 65 L65 35 L35 35 Z" fill="#78350f" />
+                  <path d="M35 35 L50 18 L65 35 Z" fill="#92400e" />
+                  <rect x="44" y="45" width="12" height="20" fill="#1c1917" />
+                  <path d="M50 14 L50 18" stroke="#f59e0b" stroke-width="3" />
+                </svg>
+                <span class="location-badge">Kaidala Village</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Hoysala Architecture</span>
+                <span class="distance-tag">9 km South-West</span>
+              </div>
+              <h3 class="card-title">Kaidala Chennakeshava Temple</h3>
+              <p class="card-desc">
+                The celebrated birthplace of legendary master sculptor Amarashilpi Jakanachari. Features a breathtaking monolithic black-stone Chennakeshava idol sculpted with intricate Hoysala details.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="kaidala">View Details</button>
+                <span class="timing-badge">Daily: 7:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Amanikere Lake & Glass House -->
+          <article class="landmark-card" data-category="modern">
+            <figure class="card-media">
+              <div class="media-illustration lake-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M10 65 Q50 50 90 65 L90 75 L10 75 Z" fill="#0284c7" opacity="0.85" />
+                  <!-- Glass house outline -->
+                  <path d="M30 50 L50 30 L70 50 Z" stroke="#38bdf8" stroke-width="2" fill="#e0f2fe" opacity="0.7" />
+                  <line x1="50" y1="30" x2="50" y2="50" stroke="#0284c7" stroke-width="1.5" />
+                  <line x1="38" y1="42" x2="62" y2="42" stroke="#0284c7" stroke-width="1.5" />
+                </svg>
+                <span class="location-badge">City Center Lakefront</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Smart City Park</span>
+                <span class="distance-tag">Heart of City</span>
+              </div>
+              <h3 class="card-title">Amanikere Lake &amp; Glass House</h3>
+              <p class="card-desc">
+                Tumakuru's flagship recreational lung space. Features a sparkling lake, crystal glass house, jogging tracks, children's park, musical dancing fountains, and boating facilities.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="amanikere">View Details</button>
+                <span class="timing-badge">5:00 AM - 8:30 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Pavagada Solar Park -->
+          <article class="landmark-card" data-category="modern">
+            <figure class="card-media">
+              <div class="media-illustration solar-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <circle cx="80" cy="20" r="12" fill="#fbbf24" />
+                  <!-- Solar panels -->
+                  <polygon points="15,65 35,45 60,45 40,65" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5" />
+                  <polygon points="45,65 65,45 90,45 70,65" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5" />
+                  <line x1="28" y1="55" x2="50" y2="55" stroke="#93c5fd" />
+                  <line x1="58" y1="55" x2="80" y2="55" stroke="#93c5fd" />
+                </svg>
+                <span class="location-badge">Pavagada, Tumakuru Dist</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Clean Energy Hub</span>
+                <span class="distance-tag">13,000 Acres</span>
+              </div>
+              <h3 class="card-title">Pavagada Solar Park (Shakti Sthala)</h3>
+              <p class="card-desc">
+                One of the world's most massive solar photovoltaic energy installations with 2,050 MW generation capacity, symbolizing Karnataka's leadership in the global green energy transition.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="solar-park">View Details</button>
+                <span class="timing-badge">Industrial Landmark</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Goravanahalli Mahalakshmi -->
+          <article class="landmark-card" data-category="pilgrimage">
+            <figure class="card-media">
+              <div class="media-illustration mutt-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M30 65 L70 65 L60 25 L40 25 Z" fill="#d97706" />
+                  <circle cx="50" cy="18" r="7" fill="#fde68a" />
+                  <path d="M45 40 Q50 35 55 40" stroke="#fff" stroke-width="2" fill="none" />
+                </svg>
+                <span class="location-badge">Koratagere Taluk</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Pilgrimage</span>
+                <span class="distance-tag">28 km from City</span>
+              </div>
+              <h3 class="card-title">Goravanahalli Mahalakshmi Temple</h3>
+              <p class="card-desc">
+                Popular devotional shrine dedicated to Goddess Mahalakshmi, situated beside the Theetha Reservoir. Renowned for Friday special pujas and daily community prasada distribution.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="goravanahalli">View Details</button>
+                <span class="timing-badge">6:00 AM - 8:30 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Siddara Betta -->
+          <article class="landmark-card" data-category="nature">
+            <figure class="card-media">
+              <div class="media-illustration hills-bg">
+                <svg viewBox="0 0 100 80" class="landmark-svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                  <path d="M15 70 Q50 10 85 70" fill="#15803d" />
+                  <path d="M42 55 Q50 48 58 55" fill="#1e293b" />
+                  <circle cx="50" cy="52" r="3" fill="#e2e8f0" />
+                </svg>
+                <span class="location-badge">Koratagere Taluk</span>
+              </div>
+            </figure>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="category-tag">Trek &amp; Cave Shrine</span>
+                <span class="distance-tag">32 km from City</span>
+              </div>
+              <h3 class="card-title">Siddara Betta (Hill of Saints)</h3>
+              <p class="card-desc">
+                Mystical hill known for its cave temple, medicinal herbs, and natural underground springs. A favorite pilgrimage retreat for saints, trekkers, and nature lovers seeking tranquility.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-card-detail" data-place="siddarabetta">View Details</button>
+                <span class="timing-badge">Daylight Trekking</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SMART CITY & ECONOMIC GROWTH -->
+    <section class="section smart-city-section" id="smart-city">
+      <div class="container">
+        <div class="smart-city-layout">
+          <div class="smart-city-content">
+            <span class="section-eyebrow">Innovation &amp; Governance</span>
+            <h2 class="section-title">Tumakuru Smart City Mission</h2>
+            <p class="section-subtitle">
+              Selected under the Government of India's Smart Cities Mission, Tumakuru is pioneering intelligent urban governance, digital connectivity, and sustainable infrastructure.
+            </p>
+
+            <div class="smart-initiatives-list">
+              <div class="initiative-item">
+                <div class="initiative-bullet" aria-hidden="true">01</div>
+                <div>
+                  <h4>Integrated Command &amp; Control Centre (ICCC)</h4>
+                  <p>Real-time surveillance, automated traffic signal management, solid waste tracking, and central emergency response across the corporation.</p>
+                </div>
+              </div>
+
+              <div class="initiative-item">
+                <div class="initiative-bullet" aria-hidden="true">02</div>
+                <div>
+                  <h4>Intelligent Transit System (ITS)</h4>
+                  <p>Modern bus terminals, electronic passenger information displays, automated smart parking zones, and e-rickshaw corridors.</p>
+                </div>
+              </div>
+
+              <div class="initiative-item">
+                <div class="initiative-bullet" aria-hidden="true">03</div>
+                <div>
+                  <h4>Amanikere Eco-Restoration</h4>
+                  <p>Complete ecological rejuvenation of the prime catchment lake, solar-powered lake fountains, biodiversity park, and recycled water treatment.</p>
+                </div>
+              </div>
+
+              <div class="initiative-item">
+                <div class="initiative-bullet" aria-hidden="true">04</div>
+                <div>
+                  <h4>Vasanthanarasapura Industrial Node</h4>
+                  <p>Spanning thousands of acres on the Chennai-Bengaluru Industrial Corridor, housing Japan-India Industrial Park, EV manufacturers, and textile clusters.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="smart-city-visual">
+            <div class="smart-card-glass">
+              <div class="glass-header">
+                <span class="pulse-dot"></span>
+                <span>Tumakuru City Live Operations</span>
+              </div>
+              <div class="glass-metrics">
+                <div class="metric-row">
+                  <span>Smart Street Lighting</span>
+                  <strong>98.4% Efficiency</strong>
+                </div>
+                <div class="metric-row">
+                  <span>Drinking Water Automation</span>
+                  <strong>24x7 Monitored</strong>
+                </div>
+                <div class="metric-row">
+                  <span>Green Canopy Cover</span>
+                  <strong>32.8% Urban Index</strong>
+                </div>
+                <div class="metric-row">
+                  <span>Industrial Connectivity</span>
+                  <strong>NH-48 Corridor</strong>
+                </div>
+              </div>
+              <div class="glass-footer">
+                <a href="#services" class="btn btn-secondary btn-sm">Access City Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CULTURE, FESTIVALS & CUISINE -->
+    <section class="section culture-section" id="culture">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Flavors &amp; Traditions</span>
+          <h2 class="section-title">The Spirit &amp; Taste of Tumakuru</h2>
+          <p class="section-subtitle">
+            Immerse yourself in authentic Karnataka hospitality, famous breakfast delicacies, and vibrant annual celebrations.
+          </p>
+        </div>
+
+        <div class="culture-grid">
+          <!-- Food 1: Thatte Idli -->
+          <article class="culture-card">
+            <div class="culture-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12c1 2 3 2 4 0s3-2 4 0" />
+              </svg>
+            </div>
+            <h3>Tumkur Thatte Idli</h3>
+            <p>
+              Legendary plate-sized steamed idlis with a pillowy, soft texture, smothered in pure desi ghee, served with spicy red chutney and fragrant potato-coconut saagu. A must-try culinary treasure at Kyatsandra on NH 48.
+            </p>
+            <span class="culture-badge">Signature Food</span>
+          </article>
+
+          <!-- Food 2: Tender Coconut & Copra -->
+          <article class="culture-card">
+            <div class="culture-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3>Kalpataru Tender Coconuts</h3>
+            <p>
+              Renowned across South India for sweet water and thick malai. Tumakuru's APMC market is one of the largest copra and tender coconut trading exchanges in the country.
+            </p>
+            <span class="culture-badge">Agricultural Pride</span>
+          </article>
+
+          <!-- Festival 3: Siddaganga Jathra & Dasara -->
+          <article class="culture-card">
+            <div class="culture-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <h3>Siddaganga Fair &amp; Chariot Festival</h3>
+            <p>
+              The annual car festival and agricultural exhibition attracts lakhs of devotees and farmers. Tumakuru also celebrates Dasara, Karaga, and DD Hills Rathotsava with traditional grandeur.
+            </p>
+            <span class="culture-badge">Festivals &amp; Arts</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITIZEN SERVICES & DIGITAL PORTAL -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Municipal Services</span>
+          <h2 class="section-title">City Corporation Citizen Services</h2>
+          <p class="section-subtitle">
+            Access transparent municipal governance, online tax payments, certificates, and civic grievance resolution.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-box">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+              </svg>
+            </div>
+            <h4>Property Tax Payment</h4>
+            <p>Pay your SAS (Self-Assessment Scheme) property tax online with instant receipt download.</p>
+            <a href="#services" class="service-link">Access Portal &rarr;</a>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h4>Birth &amp; Death Certificates</h4>
+            <p>Search, verify, and apply for digital certificates issued by Tumakuru City Corporation.</p>
+            <a href="#services" class="service-link">Verify Records &rarr;</a>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg>
+            </div>
+            <h4>Trade License &amp; Approvals</h4>
+            <p>New business registrations, renewals, and building plan approvals with streamlined NOCs.</p>
+            <a href="#services" class="service-link">Apply Online &rarr;</a>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
+            <h4>Civic Grievance Redressal</h4>
+            <p>Report sanitation, water supply, streetlight, or pothole issues directly to field teams.</p>
+            <a href="#services" class="service-link">Submit Complaint &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO REACH / CONNECTIVITY -->
+    <section class="section transport-section" id="transport">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Travel &amp; Logistics</span>
+          <h2 class="section-title">Reaching Tumakuru</h2>
+          <p class="section-subtitle">
+            Conveniently connected to Bengaluru and major south Indian metropolitan hubs via high-speed expressways and rail.
+          </p>
+        </div>
+
+        <div class="transport-grid">
+          <!-- By Road -->
+          <article class="transport-card">
+            <div class="transport-header">
+              <div class="transport-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+              </div>
+              <h3>By Highway (Road)</h3>
+            </div>
+            <p>
+              Located on <strong>National Highway 48 (NH-48)</strong>, just 70 km from Bengaluru (approx 1 hr 15 mins via elevated expressway). Frequent KSRTC Airavat, Rajahamsa, and express buses ply from Majestic (Kempegowda Bus Station) every 5 minutes.
+            </p>
+            <ul class="travel-bullets">
+              <li>Bengaluru &rarr; Tumakuru: 70 km</li>
+              <li>Hubballi &rarr; Tumakuru: 340 km</li>
+              <li>Mysuru &rarr; Tumakuru: 140 km</li>
+            </ul>
+          </article>
+
+          <!-- By Rail -->
+          <article class="transport-card">
+            <div class="transport-header">
+              <div class="transport-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="3" width="16" height="16" rx="2" />
+                  <path d="M4 11h16" />
+                  <path d="M12 3v8" />
+                  <path d="m8 19-2 3" />
+                  <path d="m16 19 2 3" />
+                  <circle cx="8" cy="15" r="1" />
+                  <circle cx="16" cy="15" r="1" />
+                </svg>
+              </div>
+              <h3>By Railway</h3>
+            </div>
+            <p>
+              <strong>Tumakuru Junction (TK)</strong> is a key railway node on the South Western Railway network with regular suburban MEMU trains and superfast expresses connecting to Bengaluru City, Yesvantpur, Shivamogga, and Belagavi.
+            </p>
+            <ul class="travel-bullets">
+              <li>Daily Suburban MEMU to Yesvantpur</li>
+              <li>Siddhaganga Intercity Express</li>
+              <li>Vande Bharat corridor connectivity</li>
+            </ul>
+          </article>
+
+          <!-- By Air -->
+          <article class="transport-card">
+            <div class="transport-header">
+              <div class="transport-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z" />
+                </svg>
+              </div>
+              <h3>By Air (Nearest Airport)</h3>
+            </div>
+            <p>
+              <strong>Kempegowda International Airport (BLR)</strong> is approximately 85 km away. Accessible directly via the Dobbaspet-Doddaballapur bypass road, avoiding central Bengaluru traffic in about 90 minutes.
+            </p>
+            <ul class="travel-bullets">
+              <li>Distance: 85 km (~90 mins)</li>
+              <li>Prepaid Taxis &amp; Flybus connects available</li>
+              <li>Smooth multi-lane bypass road access</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMERGENCY HELPLINE & CONTACT DIRECTORY -->
+    <section class="section helpline-section" id="helpline">
+      <div class="container">
+        <div class="helpline-banner">
+          <div class="helpline-header">
+            <h3>Emergency &amp; Citizen Helplines</h3>
+            <p>Direct 24x7 emergency contacts for Tumakuru District and City Administration.</p>
+          </div>
+
+          <div class="helpline-grid">
+            <div class="helpline-pill">
+              <span class="pill-service">Police Control Room</span>
+              <span class="pill-number">112</span>
+            </div>
+            <div class="helpline-pill">
+              <span class="pill-service">Fire &amp; Rescue</span>
+              <span class="pill-number">101</span>
+            </div>
+            <div class="helpline-pill">
+              <span class="pill-service">Health / Ambulance</span>
+              <span class="pill-number">108</span>
+            </div>
+            <div class="helpline-pill">
+              <span class="pill-service">City Corporation</span>
+              <span class="pill-number">0816-2278473</span>
+            </div>
+            <div class="helpline-pill">
+              <span class="pill-service">District Hospital</span>
+              <span class="pill-number">0816-2278252</span>
+            </div>
+            <div class="helpline-pill">
+              <span class="pill-service">Women Helpline</span>
+              <span class="pill-number">1091</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- NATIVE ACCESSIBLE DIALOG MODAL FOR LANDMARK DETAILS -->
+  <dialog id="landmark-modal" class="landmark-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <button class="dialog-close-btn" id="modal-close" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="dialog-body" id="modal-body">
+        <h3 id="dialog-title" class="dialog-title">Landmark Detail</h3>
+        <p class="dialog-desc">Details loading...</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-identity">
+          <div class="brand-text">
+            <span class="kannada-title">ತುಮಕೂರು ನಗರ</span>
+            <span class="english-title">TUMAKURU CITY</span>
+            <span class="brand-subtitle">Smart City • Karnataka, India</span>
+          </div>
+        </div>
+        <p class="footer-summary">
+          Official Web Portal of Tumakuru City. Celebrating the spiritual grandeur of Kalpataru Nadu, fostering knowledge, clean energy, and smart sustainable growth.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore Places</h4>
+        <ul class="footer-links">
+          <li><a href="#landmarks">Sri Siddaganga Mutt</a></li>
+          <li><a href="#landmarks">Devarayanadurga (DD Hills)</a></li>
+          <li><a href="#landmarks">Namada Chilume</a></li>
+          <li><a href="#landmarks">Kaidala Temple</a></li>
+          <li><a href="#landmarks">Pavagada Solar Park</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul class="footer-links">
+          <li><a href="#smart-city">Smart City Limited</a></li>
+          <li><a href="#services">Property Tax (SAS)</a></li>
+          <li><a href="#services">Civic Grievances</a></li>
+          <li><a href="#services">Trade Permits</a></li>
+          <li><a href="#helpline">Emergency Numbers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>City Office</h4>
+        <address class="footer-address">
+          Tumakuru City Corporation (TCC),<br>
+          B.H. Road, Opposite DC Office,<br>
+          Tumakuru, Karnataka - 572101<br>
+          <strong>PIN Code:</strong> 572101<br>
+          <strong>STD Code:</strong> 0816
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p>&copy; 2026 Tumakuru City Portal. Designed with modern web standards and accessibility.</p>
+        <div class="bottom-links">
+          <a href="#home">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
